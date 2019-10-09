@@ -7,10 +7,16 @@ def convert_to_korean(number, type=""):
     result = ""
 
     if number / 1000 >= 1:
-        result += convert_to_korean(int(number / 1000)) + "천"
+        if int(number / 1000) == 1:
+            result += "천"
+        else:
+            result += convert_to_korean(int(number / 1000)) + "천"
         number = number % 1000
     if number / 100 >= 1:
-        result += convert_to_korean(int(number / 100)) + "백"
+        if int(number / 100) == 1:
+            result += "백"
+        else:
+            result += convert_to_korean(int(number / 100)) + "백"
         number = number % 100
     if number / 10 >= 1:
         if type == "month" and number / 10 == 1:
@@ -21,7 +27,6 @@ def convert_to_korean(number, type=""):
             result += "십"
         else:
             result += convert_to_korean(int(number / 10)) + "십"
-
         number = number % 10
     if number < 10 and number / 1 >= 1:
         if type == "month" and number / 10 == 6:
@@ -35,7 +40,7 @@ def convert_to_korean(number, type=""):
 
 
 dt = datetime.datetime.now()
-dt = datetime.datetime(2019, 10, 1, 13, 1, 1)
+dt = datetime.datetime(1990, 10, 1, 13, 1, 1)
 print(str(dt.year) + "년 "
       + str(dt.month) + "월 "
       + str(dt.day) + "일 "
