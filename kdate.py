@@ -35,7 +35,7 @@ def convert_to_korean(number, type=""):
 
 
 dt = datetime.datetime.now()
-dt = datetime.datetime(2019, 10, 1, 11, 1, 1)
+dt = datetime.datetime(2019, 10, 1, 13, 1, 1)
 print(str(dt.year) + "년 "
       + str(dt.month) + "월 "
       + str(dt.day) + "일 "
@@ -46,7 +46,7 @@ print(str(dt.year) + "년 "
 print(convert_to_korean(dt.year) + "년 "
       + convert_to_korean(dt.month, "month") + "월 "
       + convert_to_korean(dt.day) + "일 "
-      + convert_to_korean(dt.hour, "hour") + "시 "
+      + convert_to_korean(int(dt.strftime("%I")), "hour") + "시 "
       + convert_to_korean(dt.minute) + "분 "
       + convert_to_korean(dt.second) + "초")
 
