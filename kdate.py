@@ -40,13 +40,6 @@ def convert_to_korean(number, datetime_type=""):
 
 
 dt = datetime.datetime.now()
-dt = datetime.datetime(1990, 10, 1, 13, 1, 1)
-print(str(dt.year) + "년 "
-      + str(dt.month) + "월 "
-      + str(dt.day) + "일 "
-      + str(dt.hour) + "시 "
-      + str(dt.minute) + "분 "
-      + str(dt.second) + "초")
 
 print(convert_to_korean(dt.year) + "년 "
       + convert_to_korean(dt.month, "month") + "월 "
