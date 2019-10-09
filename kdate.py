@@ -2,8 +2,8 @@ import datetime
 
 
 def convert_to_korean(number, datetime_type=""):
-    korean_number = ["영", "일", "이", "삼", "사", "오", "육", "칠", "팔", "구"]
-    korean_pronoun_number = ["영", "한", "두", "세", "네", "다섯", "여섯", "일곱", "여덟", "아홉", "열"]
+    chinese_character_number = ["영", "일", "이", "삼", "사", "오", "육", "칠", "팔", "구"]
+    pure_korean_number = ["영", "한", "두", "세", "네", "다섯", "여섯", "일곱", "여덟", "아홉", "열"]
     result = ""
 
     if number / 1000 >= 1:
@@ -32,9 +32,9 @@ def convert_to_korean(number, datetime_type=""):
         if datetime_type == "month" and number / 10 == 6:
             result += "유"
         elif datetime_type == "hour":
-            result += korean_pronoun_number[number]
+            result += pure_korean_number[number]
         else:
-            result += korean_number[number]
+            result += chinese_character_number[number]
 
     return result
 
