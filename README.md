@@ -1,19 +1,21 @@
 # Hangeul-cli-date
-> Command line interface에서 순 한글 날짜를 확인할 수 있는 실행파일입니다.
-> MacOS에서 완벽하게 지원합니다.
+> Command line interface에서 한글 날짜, 시간을 확인할 수 있는 실행파일입니다.
+
+<p align="center">
+  <img src="https://github.com/Hangeuler/Hangeul-cli-date/blob/master/image/example.png?raw=true">
+</p>
 
 ## 설치 및 설정
 
-1) 다운로드:
+지원 OS : MacOS
+
+1) 다운로드: 아래 script를 terminal에서 붙여넣습니다.
 
 ```sh
-$ curl https://raw.githubusercontent.com/Hangeuler/Hangeul-cli-date/master/dist/kdate > ~/.kdate && chmod u+x ~/.kdate
+curl https://raw.githubusercontent.com/Hangeuler/Hangeul-cli-date/master/dist/kdate > ~/.kdate && chmod u+x ~/.kdate
 ```
 
-2) 설정:
-
-환경변수로 설정이 필요합니다. 사용하는 쉘스크립트에 따라 아래와 같이 환경변수를 추가합니다. 
-(아래는 bash shell을 사용할 경우의 예시)
+2) 설정: 환경변수로 설정이 필요합니다. 사용하는 쉘스크립트에 따라 아래와 같이 환경변수를 추가합니다. (아래는 bash shell을 사용할 경우의 예시)
 
 ```sh
 $ vi ~/.bash
