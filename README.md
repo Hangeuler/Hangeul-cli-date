@@ -1,9 +1,7 @@
 # Hangeul-cli-date
 > Command line interface에서 한글 날짜, 시간을 확인할 수 있는 실행파일입니다.
 
-<p align="center">
-  <img src="https://github.com/Hangeuler/Hangeul-cli-date/blob/master/image/example.png?raw=true">
-</p>
+[![](http://img.youtube.com/vi/gqjJuYX41us/0.jpg)](http://www.youtube.com/watch?v=gqjJuYX41us "")
 
 ## 설치 및 설정
 
@@ -30,6 +28,10 @@ alias kdate="~/.kdate"
 ## 실행 방법
 
 Shell 설정에서 환경변수로 설정하고 나면 어느 디렉토리에서든 아래 명령어로 한글 날짜를 확인할 수 있습니다.
+
+<p align="center">
+  <img src="https://github.com/Hangeuler/Hangeul-cli-date/blob/master/image/example.png?raw=true">
+</p>
 
 ```sh
 $ kdate
