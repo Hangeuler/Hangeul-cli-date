@@ -40,7 +40,7 @@ $ kdate
 
 ## 기여한 사람
 
-- 이소민 <https://github.com/iSOMin>
+- 이소민 <https://github.com/isoming>
 - 최원영 <https://github.com/AndersonChoi>
 
 상기 프로젝트는 Apache License 2.0 라이센스를 따릅니다.  ``LICENSE`` 파일에서 관련 내용을 확인할 수 있습니다.
